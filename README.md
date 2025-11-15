@@ -1,47 +1,49 @@
-# 🌍 Utopia Map [![](https://img.shields.io/opencollective/backers/utopia-project)](https://opencollective.com/utopia-project#section-contributors)  [![Join us on Telegram](https://img.shields.io/badge/Join-Telegram-blue?logo=telegram)](https://t.me/UtopiaMap)
+# 📍 Docutopia Map
 
-The Utopia Map is a flexible collaborative app for decentralized coordination and real-life networking that can be adapted to the specific requirements of different networks. Its central element is the interactive geographical map, where users can add and manage **Items** in predefined **Layers**.
+Docutopia Map is the code base that powers [docutopia.de](https://docutopia.de), a collaborative map and directory for the German documentary film ecosystem. The platform highlights filmmakers, production collectives, festivals, initiatives, resources, and places that support documentary storytelling. It is designed to make the landscape of documentary culture more visible, foster exchange, and help new collaborations emerge.
 
-Utopia Map is made for networks and initiatives  that aim to connect people in real life. By providing a custom instance of Utopia Map, each network can grow and coordinate its ecosystem effectively while encouraging real-world interactions and collaborations.
+> **Note**
+> This project is a fork of [utopia-map](https://github.com/utopia-os/utopia-map). We extend and adapt the original open-source project to serve the needs of the Docutopia community.
 
-**Utopia Map** is based on **[Utopia UI](https://github.com/utopia-os/utopia-ui)**.
+## What you can do with Docutopia Map
 
-## Key Features
+- 🔎 **Explore the scene** – Browse a living map of documentary actors across Germany and beyond.
+- 🗂️ **Discover thematic layers** – Filter entries by categories like people, projects, events, infrastructures, and learning opportunities.
+- 📌 **Navigate interactively** – Click markers to open rich popups with key facts, contacts, and links.
+- 🤝 **Build connections** – Find collaborators, venues, or initiatives that align with your interests.
+- 🧭 **Stay oriented** – Use search, tagging, and layer descriptions to quickly surface relevant entries.
 
-- **Interactive Map**: The core feature is an intuitive geographical map where users can add, edit, and manage items like members, activities, and resources. Each map instance has its own identity, users, and unique configuration.
-- **Customizable Layers**: Items are organized into predefined Layers, each with specific icons, colors, texts, and Map Markers. This ensures clarity and relevance for different networks.
-- **Dynamic Map Markers**:  Geographic position of item are indicated on the map by adaptive and customizable Map Markers
-- **Popups**: Clicking a Map Marker reveals a Popup — a compact preview of the Item with its most relevant information. Define custom Popups for each of your Layers.
-- **Profiles**: Each Item has a dedicated Profile that showcases all its associated data, making it easier to explore and manage. Define custom profiles for each of your Layers.
+## Local development
 
-## Deployment Options
-
-- **SaaS**: A hosted solution with regular updates and support for easy onboarding and maintenance.
-- **Self-Hosted**: Deploy on your own infrastructure to retain full control and customization.
-
-## Getting Started
-
-Clone the repository and get started with the following commands:
+Install dependencies and start the development servers:
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Get your Map! 🌱 🌍
+- The frontend runs on [Next.js](https://nextjs.org/) with shared UI components from Utopia UI.
+- The backend is a [Strapi](https://strapi.io/) instance that stores layers, items, and media assets.
 
-Start mapping and growing your community ecosystem together with your custom map.
+For more detailed setup instructions, refer to the documentation in the `app/` and `backend/` directories.
 
-[Join us on Telegram](https://t.me/UtopiaMap)
+## Contributing
 
-## Support Utopia Map 💚
+Docutopia thrives on contributions from documentary practitioners, researchers, and developers. If you want to propose new features, report bugs, or contribute data to the map, please open an issue or submit a pull request.
 
-We are building Utopia Map as an free and opensource tool. To keep this project sustainable and accessible, we need financial support as well as Developrs, UX Designer, Community Managers and Content Creators.
+When contributing code:
 
-[Join us on Telegram](https://t.me/UtopiaMap) and support us on [OpenCollective](https://opencollective.com/utopia-project)
+1. Fork the repository or work on a dedicated branch.
+2. Follow the coding standards outlined in this repository.
+3. Provide clear descriptions, screenshots (when relevant), and tests for your changes.
 
-<a href="https://opencollective.com/utopia-project">
-    <img width="250" src="https://opencollective.com/utopia-project/donate/button@2x.png?color=blue" style="margin-bottom:20px;" />
-</a>
+## Community & Support
 
+- 📬 Email: [info@docutopia.de](mailto:info@docutopia.de)
+- 🌐 Website: [docutopia.de](https://docutopia.de)
+- 💬 Chat: Reach out via the community channels listed on the website.
+
+## License
+
+Docutopia Map inherits the open-source license of the original project. See [`LICENSE`](LICENSE) for details.
 
